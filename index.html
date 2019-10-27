@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div lang="pl">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,47 @@
       href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/56327ab928.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"></header>
-      <main class="main"></main>
+      <header class="header">
+        <div class="header__logoContainer">
+          <i class="header__logo header__logo--tv fas fa-tv"></i>
+          <i class="header__logo header__logo--code fas fa-code"></i>
+        </div>
+        <h1 class="header__name">Dev</h1>
+        <button class="header__barButtonIcon">
+          <span class="header__barIcon fas fa-bars"></span>
+        </button>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">About me</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="mainContent">
+        <section class="main-side">
+          <h2 class="main-side__title"><span class="main-side__title--orange">welcome!</span> My name is Designer</h2>
+        </section>
+        <section class="about-me"></section>
+        <section class="skills"></section>
+        <section class="projects"></section>
+        <section class="contact"></section>
+      </main>
       <footer class="footer"></footer>
     </div>
     <script src="js/script.js"></script>
   </body>
-</div>
+</html>

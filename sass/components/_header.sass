@@ -1,4 +1,89 @@
 .header
-    background-color: red
-    height: 95px
-    
+    height: 80px
+    width: 100%
+    position: fixed
+    background-color: white
+    &__logoContainer
+        height: 60px
+        width: 60px
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        color: #515151
+        .header__logo
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)  
+            &--tv
+                font-size: 43px
+            &--code
+                font-size: 20px  
+                top: 45%
+    &__name
+        font-size: 28px
+        font-weight: bold
+        letter-spacing: 0.15em
+        position: absolute
+        top: 46%
+        left: 80px
+        transform: translateY(-50%)
+        color: #515151
+    &__barButtonIcon
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translateY(-50%)
+        border: none
+        background-color: transparent
+        @include mediaQ(568px)
+            display: none
+        .header__barIcon
+            font-size: 35px
+            color: #515151
+    &__nav.nav
+        position: absolute
+        top: 80px
+        right: 0
+        width: 100%
+        height: 120px
+        background-color: white
+        z-index: 9999
+        display: none
+        &--active
+            display: block
+        @include mediaQ(568px)
+            display: block
+            height: 30px
+            width: 300px
+            top: 50%
+            transform: translateY(-50%)
+            right: 30px
+        @include mediaQ(768px)
+            width: 420px
+        .nav__list
+            display: flex
+            flex-direction: column
+            height: 100%
+            text-align: center
+            @include mediaQ(568px)
+                flex-direction: row
+            .nav__item
+                flex-basis: 25%
+                line-height: 30px
+                position: relative
+                &:hover::before
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(-50%)
+                    height: 2px
+                    width: 80px
+                    background-color: orange
+                .nav__link
+                    color: #515151
+                    text-decoration: none
+                    font-weight: bold
+            
