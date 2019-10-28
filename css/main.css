@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -225,19 +230,26 @@ body {
   min-height: 400vh;
   font-family: 'Raleway', sans-serif;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 .wrapper {
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
+}
+
+.mainContent {
+  padding-top: 80px;
 }
 
 .header {
   height: 80px;
   width: 100%;
+  max-width: 1440px;
   position: fixed;
   background-color: white;
+  z-index: 9999;
 }
 
 .header__logoContainer {
@@ -382,9 +394,166 @@ body {
 
 .main-side {
   height: calc(100vh - 80px);
-  padding-top: 80px;
+  max-height: 600px;
   background-image: url("../images/main-side__mainImage.png");
   background-repeat: norepeat;
   background-size: 100% 100%;
+}
+
+@media (min-height: 731px) {
+  .main-side {
+    max-height: 575px;
+  }
+}
+
+@media (min-height: 1024px) {
+  .main-side {
+    max-height: 540px;
+  }
+}
+
+.main-side__title {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 568px) {
+  .main-side__title {
+    padding-top: 40px;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 640px) {
+  .main-side__title {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 731px) {
+  .main-side__title {
+    padding-top: 70px;
+  }
+}
+
+@media (min-height: 812px) {
+  .main-side__title {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px), (min-width: 1024px) and (min-height: 768px) {
+  .main-side__title {
+    padding-top: 120px;
+    font-size: 45px;
+  }
+}
+
+.main-side__title--orange {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #FFC53D;
+}
+
+@media (min-width: 768px) and (min-height: 1024px), (min-width: 1024px) and (min-height: 768px) {
+  .main-side__title--orange {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-side__title--orange {
+    font-size: 90px;
+  }
+}
+
+.main-side__listIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 40px auto;
+  position: relative;
+}
+
+.main-side__listIcon .main-side__itemIcon {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+
+.main-side__listIcon .main-side__itemIcon:nth-of-type(3) .main-side__figureIcon {
+  color: black;
+}
+
+.main-side__listIcon .main-side__itemIcon .main-side__figureIcon {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: orange;
+}
+
+.showcase {
+  height: 170px;
+  text-align: center;
+}
+
+.showcase__title {
+  padding-top: 20px;
+  font-size: 25px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+}
+
+.showcase__buttonsContainer {
+  height: 50px;
+  max-width: 420px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.showcase__buttonsContainer .showcase__singleButton {
+  -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
+  margin: 4px 10px;
+  border: none;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(14%, #FFC53D), color-stop(68.5%, #FF9A3D));
+  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-me {
+  height: 430px;
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
