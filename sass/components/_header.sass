@@ -5,6 +5,7 @@
     position: fixed
     background-color: white
     z-index: 9999
+    animation: showHeader 1.5s
     &__logoContainer
         height: 60px
         width: 60px
@@ -83,9 +84,16 @@
                     transform: translateX(-50%)
                     height: 2px
                     width: 80px
-                    background-color: orange
+                    background-color: hsl(39, 100, 50)
                 .nav__link
                     color: #515151
                     text-decoration: none
                     font-weight: bold
-            
+
+@keyframes showHeader
+    from
+        top: -100px
+        opacity: 0
+    to
+        top: 0px
+        opacity: 1

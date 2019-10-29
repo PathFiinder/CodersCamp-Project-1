@@ -30,13 +30,13 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About me</a>
+              <a href="#" class="nav__link nav__link--aboutMe">About me</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--skills">Skills</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Portfolio</a>
+              <a href="#" class="nav__link nav__link--portfolio">Portfolio</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -233,29 +233,58 @@
           <h2 class="contact__title">Contact us</h2>
           <div class="contact__container">
             <div class="contact__mainInfo mainInfo">
-              <img src="images/contact__image.png" alt="Contact image" class="mainInfo__image">
-              <p class="mainInfo__content">Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+              <img
+                src="images/contact__image.png"
+                alt="Contact image"
+                class="mainInfo__image"
+              />
+              <p class="mainInfo__content">
+                Please describe your question. Send me a message and I will
+                answer you as soon as possible!
+              </p>
               <div class="mainInfo__container">
                 <ul class="mainInfo__singleItem list">
-                  <li class="list__item"><span class="list__icon fab fa-twitter"></span></li>
-                  <li class="list__item"><span class="list__icon fab fa-linkedin-in"></span></li>
-                  <li class="list__item"><span class="list__icon fab fa-github"></span></li>
-                  <li class="list__item"><span class="list__icon fab fa-facebook-f"></span></li>
+                  <li class="list__item">
+                    <span class="list__icon fab fa-twitter"></span>
+                  </li>
+                  <li class="list__item">
+                    <span class="list__icon fab fa-linkedin-in"></span>
+                  </li>
+                  <li class="list__item">
+                    <span class="list__icon fab fa-github"></span>
+                  </li>
+                  <li class="list__item">
+                    <span class="list__icon fab fa-facebook-f"></span>
+                  </li>
                 </ul>
-                <p class="mainInfo__singleItem mainInfo__singleItem--bold">Designer</p>
-                <p class="mainInfo__singleItem mainInfo__singleItem--bold">Poland, Wrocław</p>
+                <p class="mainInfo__singleItem mainInfo__singleItem--bold">
+                  Designer
+                </p>
+                <p class="mainInfo__singleItem mainInfo__singleItem--bold">
+                  Poland, Wrocław
+                </p>
                 <p class="mainInfo__singleItem">ul. Tęczowa 12/3 50-000</p>
                 <p class="mainInfo__singleItem">48 123-456-789</p>
-                <p class="mainInfo__singleItem mainInfo__singleItem--underline">night-coding@dev.com</p>
+                <p class="mainInfo__singleItem mainInfo__singleItem--underline">
+                  night-coding@dev.com
+                </p>
               </div>
             </div>
             <div class="contact__form form">
               <h3 class="form__title">Let's start!</h3>
               <form action="post" class="form__form">
-                  <input type="text" class="form__item" placeholder="Name">
-                  <input type="text" class="form__item" placeholder="Your e-mail address">
-                  <input type="text" class="form__item" placeholder="Topic">
-                  <input type="text" class="form__item form__item--last" placeholder="Message">
+                <input type="text" class="form__item" placeholder="Name" />
+                <input
+                  type="text"
+                  class="form__item"
+                  placeholder="Your e-mail address"
+                />
+                <input type="text" class="form__item" placeholder="Topic" />
+                <input
+                  type="text"
+                  class="form__item form__item--last"
+                  placeholder="Message"
+                />
               </form>
               <button class="form__button">Send</button>
             </div>
@@ -266,6 +295,11 @@
         <h2 class="footer__title">Copyrights &#64; 2019 CodersCrew</h2>
       </footer>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>

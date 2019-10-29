@@ -61,6 +61,7 @@
                 @include mediaQ(1024px)
                     width: 80px
                     height: 80px
+                    left: 54px
             .mainInfo__content
                 color: white
                 letter-spacing: 0.04em
@@ -76,6 +77,7 @@
                     font-size: 22px
                     max-width: 375px
                     line-height: 30px
+                    left: 54px
             .mainInfo__container
                 height: 150px
                 width: 200px
@@ -87,6 +89,8 @@
                 color: white
                 @include mediaQ(568px)
                     bottom: 35px
+                @include mediaQ(1024px)
+                    left: 54px
                 .mainInfo__singleItem
                     flex-basis: 20%
                     font-size: 16px
@@ -109,7 +113,7 @@
                             height: 22px
                             width: 22px
                             border-radius: 50%
-                            color: orange
+                            color: hsl(39, 100, 50)
                             position: absolute
                             top: 50%
                             left: 50%
@@ -148,6 +152,8 @@
                     @include mediaQ(568px)
                         margin: 9px
                         flex-basis: 56px
+                    @include mediaQ(1024px)
+                        margin-left: 0px
                     &::placeholder
                         font-size: 14px
                         letter-spacing: 0.04em
@@ -170,3 +176,5 @@
                 letter-spacing: 0.04em
                 @include mediaQ(568px)
                     bottom: 35px
+                @include mediaQ(1024px)
+                    right: 15px
