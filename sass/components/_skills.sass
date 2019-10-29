@@ -1,0 +1,88 @@
+.skills
+    height: 440px
+    position: relative
+    margin-top: 45px
+    margin-bottom: 15px
+    padding-top: 45px
+    @include mediaQ(768px)
+        padding-top: 60px
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        height: 100%
+        width: 85%
+        max-width: 980px
+        background-color: #FAFAFF
+    .skills__title
+        font-weight: bold
+        font-size: 32px
+        letter-spacing: 0.02em
+        position: absolute
+        top: 13px
+        left: 18%
+        @include mediaQ(768px)
+            top: 28px  
+        @include mediaQ(1112px)
+            left: 19%
+        @include mediaQ(1200px)
+            left: 22%
+        @include mediaQ(1250px)
+            left: 28%
+        @include mediaQ(1350px)
+            left: 35%
+    .skills__mainContainer
+        height: 330px
+        display: flex
+        flex-direction: column
+        background-color: white
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05)
+        width: 94%
+        max-width: 1240px
+        margin: 10px auto 0 auto
+        position: relative
+        z-index: 1
+        @include mediaQ(411px)
+            flex-direction: row
+        @include mediaQ(768px)
+            height: 280px
+            margin: 20px auto 0 auto
+        .skills__singleItem
+            flex-basis: calc(33.33% - 16px)
+            overflow: hidden
+            text-align: center
+            margin: 8px
+            font-size: 18px
+            @include mediaQ(411px)
+                height: 180px
+                margin: 75px 8px
+                font-size: 22px
+                padding-right: 8px
+            @include mediaQ(768px)
+                margin-top: 50px
+            &:nth-of-type(1)
+                padding-top: 5px
+            &:nth-of-type(1), &:nth-of-type(2)
+                border-bottom: 4px dotted orange
+                @include mediaQ(411px)
+                    border-bottom: none
+                    border-right: 4px dotted orange
+            .skills__itemImage
+                height: 40px
+                width: 40px
+                @include mediaQ(411px)
+                    height: 60px
+                    width: 60px
+            .skills__typeName
+                font-weight: bold
+                color: orange
+                margin-top: 3px
+                @include mediaQ(411px)
+                    margin-top: 15px
+            .skills__techName
+                margin-top: 3px
+                @include mediaQ(411px)
+                    margin-top: 15px
