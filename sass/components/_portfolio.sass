@@ -1,0 +1,95 @@
+.portfolio
+    margin-top: 45px
+    text-align: center
+    &__title
+        font-weight: bold
+        font-size: 32px
+        letter-spacing: 0.02em
+        padding-top: 13px
+    &__container
+        height: 1000px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        margin-top: 10px
+        @include mediaQ(568px)
+            height: 600px
+        .portfolio__singleItem
+            flex-basis: 100%
+            padding: 2px
+            position: relative
+            @include mediaQ(568px)
+                flex-basis: 50%
+            &--first
+                @include mediaQ(768px)
+                    flex-basis: 30%
+            &--second
+                @include mediaQ(768px)
+                    flex-basis: 30%
+            &--third
+                @include mediaQ(768px)
+                    flex-basis: 40%
+            &--fourth
+                @include mediaQ(768px)
+                    flex-basis: 30%
+            &--fifth
+                @include mediaQ(568px)
+                    flex-basis: 100%
+                @include mediaQ(768px)
+                    flex-basis: 70%
+            .portfolio__singleItemImage
+                display: block
+                height: calc(200px - 4px)
+                width: 100%
+                @include mediaQ(768px)
+                    height: calc(300px - 4px)
+            .portfolio__singleItemName,.portfolio__singleItemContent,.portfolio__singleItemButton
+                display: none
+            &:hover
+                &::before
+                    content: ""
+                    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%)
+                    height: 100%
+                    width: 100%
+                    position: absolute
+                    top: 0
+                    left: 0
+                .portfolio__singleItemName
+                    display: block
+                    position: absolute
+                    top: 20px
+                    left: 20px
+                    font-weight: bold
+                    color: white
+                    font-size: 25px
+                    @include mediaQ(1024px)
+                        font-size: 36px
+                .portfolio__singleItemContent
+                    display: block
+                    position: absolute
+                    top: 50px
+                    left: 20px
+                    width: 90%
+                    color: white
+                    text-align: start
+                    margin-top: 10px
+                    font-size: 12px
+                    letter-spacing: 0.02em
+                    @include mediaQ(1024px)
+                        font-size: 16px
+                .portfolio__singleItemButton
+                    display: block
+                    position: absolute
+                    bottom: 20px
+                    left: 20px
+                    height: 40px
+                    width: 100px
+                    border: none
+                    border-radius: 15px
+                    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%)
+                    color: white
+                    font-weight: bold
+                    letter-spacing: 0.02em
+                    font-size: 16px
+                    @include mediaQ(1024px)
+                        bottom: 80px

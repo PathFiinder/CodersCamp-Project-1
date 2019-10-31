@@ -1,0 +1,123 @@
+.about-me
+    height: 440px
+    position: relative
+    margin-top: 15px
+    margin-bottom: 15px
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        height: 100%
+        width: 85%
+        max-width: 980px
+        background-color: #FAFAFF
+    &__title
+        font-weight: bold
+        font-size: 32px
+        letter-spacing: 0.02em
+        padding-top: 13px
+        margin-left: 20px
+        @include mediaQ(568px)
+            margin-left: 30px
+        @include mediaQ(667px)
+            margin-left: 50px
+        @include mediaQ(768px)
+            padding-top: 28px
+    &__mainContainer
+        height: 330px
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        background-color: white
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05)
+        width: 94%
+        max-width: 1240px
+        margin: 10px auto 0 auto
+        position: relative
+        @include mediaQ(768px)
+            flex-direction: row
+            height: 280px
+            margin: 20px auto 0 auto
+        .about-me__describeContainer
+            height: 136px
+            display: flex
+            flex-direction: row
+            border-bottom: 4px dotted hsl(39, 100, 50)
+            width: 94%
+            margin: 0 auto
+            @include mediaQ(768px)
+                border-bottom: none
+                border-right: 4px dotted hsl(39, 100, 50)
+                height: 196px
+                margin-top: 42px
+                width: 50%
+            @include mediaQ(1024px)
+                width: 38%
+            .about-me__image
+                height: 100px
+                width: 100px
+                border-radius: 50%
+                flex-basis: 100px
+                margin: 18px 10px
+                @include mediaQ(768px)
+                    margin: 48px 10px
+                @include mediaQ(1024px)
+                    margin: 20px 10px 0 
+                @include mediaQ(1280px)
+                    margin: 20px 30px 0
+            .about-me__infoList
+                flex-grow: 1
+                height: 120px
+                margin: 8px 0
+                flex-direction: column
+                @include mediaQ(768px)
+                    margin: 33px 0 
+                .about-me__infoItem
+                    height: 20%
+                    font-size: 11px
+                    line-height: calc(130px / 5)
+                    padding-left: 5px
+                    padding-right: 2px
+                    font-weight: bold
+                    &:nth-of-type(5)
+                        font-size: 10.5px
+                        @include mediaQ(411px)
+                            font-size: 14px
+                        @include mediaQ(768px)
+                            font-size: 15px
+                        @include mediaQ(1100px)
+                            font-size: 17px
+                    @include mediaQ(411px)
+                        font-size: 14px
+                    @include mediaQ(768px)
+                        font-size: 17px
+                    &--orange
+                        color: orange
+                .about-me__infoItem:nth-of-type(5) .about-me__infoItem--orange
+                    text-decoration: underline                 
+        .about-me__contentContainer
+            height: auto
+            width: 96%
+            margin: 10px auto 
+            padding: 5px
+            letter-spacing: 0.04em
+            font-size: 15px
+            padding-bottom: 10px
+            @include mediaQ(568px)
+                font-size: 16px
+            @include mediaQ(768px)
+                flex-basis: 50%
+                padding: 10px 20px
+                max-height: 180px
+                margin: 50px auto
+            @include mediaQ(1024px)
+                max-height: 140px
+                margin: 70px auto
+                flex-basis: 62%
+                font-size: 20px
+
+
+
+                    

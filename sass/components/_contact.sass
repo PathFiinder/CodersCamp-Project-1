@@ -1,0 +1,180 @@
+.contact
+    margin: 45px auto 0 
+    position: relative
+    padding-top: 77px
+    height: 785px
+    &::before
+        content: ""
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #FAFAFF
+        z-index: -1
+    &__title
+        font-weight: bold
+        font-size: 32px
+        letter-spacing: 0.02em
+        position: absolute
+        top: 13px
+        left: 10%
+    &__container
+        width: 94%
+        max-width: 1240px
+        height: 621px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2)
+        @include mediaQ(568px)
+            flex-direction: row
+        .contact__mainInfo.mainInfo
+            flex-basis: 45%
+            background-color: #FF9A3D 
+            position: relative
+            @include mediaQ(1024px)
+                flex-basis: 509px
+            &::before
+                content: ""
+                width: 0
+                height: 0
+                position: absolute
+                bottom: -32px
+                right: 32px
+                border-left: 23.5px solid transparent
+                border-right: 23.5px solid transparent
+                border-top: 32px solid #FF9A3D 
+                z-index: 9998
+                @include mediaQ(568px)
+                    bottom: 542px
+                    right: -39px
+                    transform: rotate(-90deg)
+            .mainInfo__image
+                width: 68px
+                height: 68px
+                position: absolute
+                top: 10px 
+                left: 20px
+                @include mediaQ(568px)
+                    top: 35px
+                @include mediaQ(1024px)
+                    width: 80px
+                    height: 80px
+                    left: 54px
+            .mainInfo__content
+                color: white
+                letter-spacing: 0.04em
+                font-size: 14px
+                position: absolute
+                top: 30px
+                left: 110px
+                @include mediaQ(568px)
+                    top: 140px
+                    left: 20px
+                    font-size: 18px
+                @include mediaQ(1024px)
+                    font-size: 22px
+                    max-width: 375px
+                    line-height: 30px
+                    left: 54px
+            .mainInfo__container
+                height: 150px
+                width: 200px
+                position: absolute
+                bottom: 10px
+                left: 20px
+                display: flex
+                flex-direction: column
+                color: white
+                @include mediaQ(568px)
+                    bottom: 35px
+                @include mediaQ(1024px)
+                    left: 54px
+                .mainInfo__singleItem
+                    flex-basis: 20%
+                    font-size: 16px
+                    line-height: 25px
+                    &--bold
+                        font-weight: bold
+                    &--underline
+                        text-decoration: underline
+                .mainInfo__singleItem.list
+                    display: flex
+                    flex-direction: row
+                    width: 150px
+                    overflow: hidden
+                    .list__item
+                        flex-basis: 25%
+                        text-align: center
+                        position: relative
+                        .list__icon
+                            background-color: white
+                            height: 22px
+                            width: 22px
+                            border-radius: 50%
+                            color: hsl(39, 100, 50)
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%,-50%)
+                            line-height: 22px
+        .contact__form.form
+            flex-basis: 55%
+            background-color: white
+            position: relative
+            @include mediaQ(1024px)
+                flex-grow: 1
+            .form__title
+                margin-top: 10px
+                margin-left: 20px
+                font-size: 26px
+                font-weight: bold
+                @include mediaQ(568px)
+                    margin-left: 40px
+                    margin-top: 45px
+                    font-size: 32px
+            .form__form
+                height: 240px
+                margin: 10px 10px 10px 20px
+                display: flex
+                flex-direction: column
+                @include mediaQ(568px)
+                    margin-left: 40px
+                    height: 420px
+                .form__item
+                    margin: 5px
+                    flex-basis: calc(20% - 10px) 
+                    border-radius: 15px
+                    border: none
+                    padding-left: 10px
+                    background-color: #FAFAFF
+                    @include mediaQ(568px)
+                        margin: 9px
+                        flex-basis: 56px
+                    @include mediaQ(1024px)
+                        margin-left: 0px
+                    &::placeholder
+                        font-size: 14px
+                        letter-spacing: 0.04em
+                        color: A0A0A0
+                    &--last
+                        flex-basis: 40%
+                        @include mediaQ(568px)
+                        flex-basis: 180px
+            .form__button
+                height: 40px
+                width: 100px
+                position: absolute
+                bottom: 8px
+                right: 10px
+                background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%)
+                border-radius: 15px
+                color: white
+                font-weight: bold
+                border: none
+                letter-spacing: 0.04em
+                @include mediaQ(568px)
+                    bottom: 35px
+                @include mediaQ(1024px)
+                    right: 15px

@@ -1,15 +1,37 @@
 @import "base/_reset.sass"
-
+@import "utlils/_mixins.sass"
 
 
 body 
     min-height: 100vh
     font-family: 'Raleway', sans-serif
+    min-width: 320px
+    overflow-x: hidden
 
 
 .wrapper
-    max-width: 1600px
+    max-width: 1440px
     margin: 0 auto
+    position: relative
 
 
+.mainContent
+    padding-top: 80px
+    animation: mainShow 5s 
+
+@keyframes mainShow
+    from
+        opacity: 0
+        left: -100px
+    to
+        opacity: 1
+        left: 0px
+    
 @import "components/_header.sass"
+@import "components/_main-side.sass"
+@import "components/_showcase.sass"
+@import "components/_about-me.sass"
+@import "components/_skills.sass"
+@import "components/_portfolio.sass"
+@import "components/_contact.sass"
+@import "components/_footer.sass"
