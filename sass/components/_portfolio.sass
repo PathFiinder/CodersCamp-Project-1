@@ -16,7 +16,6 @@
             height: 600px
         .portfolio__singleItem
             flex-basis: 100%
-            padding: 2px
             position: relative
             @include mediaQ(568px)
                 flex-basis: 50%
@@ -39,10 +38,10 @@
                     flex-basis: 70%
             .portfolio__singleItemImage
                 display: block
-                height: calc(200px - 4px)
+                height: 200px
                 width: 100%
                 @include mediaQ(768px)
-                    height: calc(300px - 4px)
+                    height: 300px
             .portfolio__singleItemName,.portfolio__singleItemContent,.portfolio__singleItemButton
                 display: none
             &:hover
@@ -57,7 +56,7 @@
                 .portfolio__singleItemName
                     display: block
                     position: absolute
-                    top: 20px
+                    top: 30px
                     left: 20px
                     font-weight: bold
                     color: white
@@ -67,7 +66,7 @@
                 .portfolio__singleItemContent
                     display: block
                     position: absolute
-                    top: 50px
+                    top: 55px
                     left: 20px
                     width: 90%
                     color: white
@@ -76,6 +75,7 @@
                     font-size: 12px
                     letter-spacing: 0.02em
                     @include mediaQ(1024px)
+                        top: 70px
                         font-size: 16px
                 .portfolio__singleItemButton
                     display: block
