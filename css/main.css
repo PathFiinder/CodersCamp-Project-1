@@ -575,7 +575,7 @@ body {
 
 .showcase__buttonsContainer {
   height: 50px;
-  max-width: 420px;
+  max-width: 500px;
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;
@@ -588,9 +588,9 @@ body {
 }
 
 .showcase__buttonsContainer .showcase__singleButton {
-  -ms-flex-preferred-size: calc(50% - 20px);
-      flex-basis: calc(50% - 20px);
-  margin: 4px 10px;
+  -ms-flex-preferred-size: calc(50% - 100px);
+      flex-basis: calc(50% - 100px);
+  margin: 4px 50px;
   border: none;
   border-radius: 15px;
   background: -webkit-gradient(linear, right top, left top, color-stop(14%, #FFC53D), color-stop(68.5%, #FF9A3D));
@@ -598,6 +598,13 @@ body {
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+
+.showcase__buttonsContainer .showcase__singleButton:hover {
+  border: 1px solid #FFC53D;
+  background: none;
+  background-color: white;
+  color: #FFC53D;
 }
 
 .about-me {
@@ -809,6 +816,7 @@ body {
   letter-spacing: 0.04em;
   font-size: 15px;
   padding-bottom: 10px;
+  line-height: 1.3;
 }
 
 @media (min-width: 568px) {
@@ -1046,7 +1054,6 @@ body {
 .portfolio__container .portfolio__singleItem {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding: 2px;
   position: relative;
 }
 
@@ -1101,13 +1108,13 @@ body {
 
 .portfolio__container .portfolio__singleItem .portfolio__singleItemImage {
   display: block;
-  height: calc(200px - 4px);
+  height: 200px;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .portfolio__container .portfolio__singleItem .portfolio__singleItemImage {
-    height: calc(300px - 4px);
+    height: 300px;
   }
 }
 
@@ -1129,7 +1136,7 @@ body {
 .portfolio__container .portfolio__singleItem:hover .portfolio__singleItemName {
   display: block;
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 20px;
   font-weight: bold;
   color: white;
@@ -1145,7 +1152,7 @@ body {
 .portfolio__container .portfolio__singleItem:hover .portfolio__singleItemContent {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: 20px;
   width: 90%;
   color: white;
@@ -1157,6 +1164,7 @@ body {
 
 @media (min-width: 1024px) {
   .portfolio__container .portfolio__singleItem:hover .portfolio__singleItemContent {
+    top: 70px;
     font-size: 16px;
   }
 }
@@ -1453,6 +1461,8 @@ body {
   border: none;
   padding-left: 10px;
   background-color: #FAFAFF;
+  -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 568px) {
@@ -1525,6 +1535,13 @@ body {
   .contact__container .contact__form.form .form__button {
     right: 15px;
   }
+}
+
+.contact__container .contact__form.form .form__button:hover {
+  border: 1px solid #FFC53D;
+  background: none;
+  background-color: white;
+  color: #FFC53D;
 }
 
 .footer {

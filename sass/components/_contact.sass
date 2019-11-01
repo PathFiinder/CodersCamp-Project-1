@@ -149,6 +149,7 @@
                     border: none
                     padding-left: 10px
                     background-color: #FAFAFF
+                    box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.75)
                     @include mediaQ(568px)
                         margin: 9px
                         flex-basis: 56px
@@ -178,3 +179,8 @@
                     bottom: 35px
                 @include mediaQ(1024px)
                     right: 15px
+                &:hover
+                    border: 1px solid #FFC53D
+                    background: none
+                    background-color: white
+                    color: #FFC53D
